@@ -1,0 +1,4 @@
+load_path : '../output/data_fe.pkl'
+target : 'Live Birth Occurrence'
+rand : 42
+test_size : 0.2
