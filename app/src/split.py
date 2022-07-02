@@ -16,11 +16,11 @@ def split(target, rand, testsize):
     X_val, X_test, y_val, y_test = train_test_split(X_test, y_test, test_size=0.5, random_state=rand)
 
     joblib.dump(X_train, '../output/X_train.pkl')
-    joblib.dump(X_train, '../output/X_val.pkl')
-    joblib.dump(X_train, '../output/X_test.pkl')
-    joblib.dump(X_train, '../output/y_train.pkl')
-    joblib.dump(X_train, '../output/y_val.pkl')
-    joblib.dump(X_train, '../output/y_test.pkl')
+    joblib.dump(X_val, '../output/X_val.pkl')
+    joblib.dump(X_test, '../output/X_test.pkl')
+    joblib.dump(y_train, '../output/y_train.pkl')
+    joblib.dump(y_val, '../output/y_val.pkl')
+    joblib.dump(y_test, '../output/y_test.pkl')
     
     return X_train, X_val, X_test, y_train, y_val, y_test
 
